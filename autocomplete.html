@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete Search Bar</title>
+    <style>
+        .autocomplete-suggestions {
+            position: absolute;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .autocomplete-suggestion {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .autocomplete-suggestion:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Autocomplete Search Bar</h2>
+        <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+        <div id="suggestions" class="autocomplete-suggestions"></div>
+    </div>
+
+    <script type="module" src="/src/autocomplete.js"></script>
+
+</body>
+</html>
